@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: /go/src/github.com/dozen/ruby-marshal
     docker:
-      - image: circleci/golang
+      - image: cimg/go
     steps:
       - checkout
       - run: go get -t -d -v ./...
